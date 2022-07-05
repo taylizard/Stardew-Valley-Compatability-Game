@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="803.0" prefWidth="503.0" style="-fx-background-color: E9BF95;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="803.0" fitWidth="503.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" style="-fx-cursor: abigail;">
+            <image>
+                <Image url="@../../assets/CS112 GUI WIP 1.jpg" />
+            </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="262.0" layoutX="54.0" layoutY="184.0" opacity="0.59" stroke="#ff85a6" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="20.0" width="400.0" />
+        <Text fill="#53c2dd" layoutX="177.0" layoutY="201.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" text="Your Profile" wrappingWidth="204.13671875">
+            <font>
+                <Font name="Bauhaus 93" size="29.0" />
+            </font>
+            <stroke>
+                <RadialGradient centerX="0.4666666666666667" centerY="0.49523809523809526" radius="0.5232558139534884">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.14901316165924072" green="0.029605263844132423" blue="0.3552631437778473" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </stroke>
+        </Text>
+        <Text layoutX="71.0" layoutY="252.0" stroke="#a2c7ed" strokeLineJoin="ROUND" strokeType="OUTSIDE" text="name" wrappingWidth="58.9833984375">
+            <font>
+                <Font name="Calibri" size="22.0" />
+            </font>
+        </Text>
+        <TextField fx:id="namePrompt" layoutX="130.0" layoutY="234.0" onAction="#nameAction" opacity="0.61" prefHeight="26.0" prefWidth="215.0" style="-fx-background-color: #B588EE;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <effect>
+                <InnerShadow blurType="ONE_PASS_BOX" choke="1.0" height="25.77" radius="13.575" width="30.53">
+                    <color>
+                        <Color red="1.0" green="0.5058823823928833" blue="0.47843137383461" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </TextField>
+        <ChoiceBox fx:id="genderPrompt" layoutX="149.0" layoutY="281.0" onAction="#genderAction" opacity="0.67" prefWidth="150.0" style="-fx-background-color: #B588EE;">
+            <effect>
+                <InnerShadow blurType="ONE_PASS_BOX" choke="1.0" height="25.62" radius="12.31" width="25.62">
+                    <color>
+                        <Color red="1.0" green="0.5058823823928833" blue="0.47843137383461" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </ChoiceBox>
+        <Text layoutX="74.0" layoutY="299.0" stroke="#a8ccf0" strokeType="OUTSIDE" text="gender" wrappingWidth="78.1367130279541">
+            <font>
+                <Font name="Calibri" size="22.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor></Text>
+        <Text layoutX="70.0" layoutY="352.0" stroke="#a8ccf0" strokeType="OUTSIDE" text="favorite season" wrappingWidth="183.1367130279541">
+            <font>
+                <Font name="Calibri" size="22.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Text>
+        <ChoiceBox fx:id="seasonPrompt" layoutX="214.0" layoutY="332.0" onAction="#seasonAction" opacity="0.67" prefWidth="150.0" style="-fx-background-color: #B588EE;">
+            <effect>
+                <InnerShadow blurType="ONE_PASS_BOX" choke="1.0" height="25.62" radius="12.31" width="25.62">
+                    <color>
+                        <Color red="1.0" green="0.5058823823928833" blue="0.47843137383461" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </ChoiceBox>
+      <Text layoutX="71.0" layoutY="405.0" stroke="#a8ccf0" strokeType="OUTSIDE" text="hobby" wrappingWidth="183.1367130279541">
+         <font>
+            <Font name="Calibri" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Text>
+      <ChoiceBox fx:id="hobbyPrompt" layoutX="134.0" layoutY="385.0" onAction="#hobbyAction" opacity="0.67" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: #B588EE;">
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" choke="1.0" height="25.62" radius="12.31" width="25.62">
+               <color>
+                  <Color red="1.0" green="0.5058823823928833" blue="0.47843137383461" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </ChoiceBox>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8c7f" height="4.0" layoutX="402.0" layoutY="189.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8c7f" height="4.0" layoutX="372.0" layoutY="189.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8c7f" height="4.0" layoutX="342.0" layoutY="189.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="140.0" layoutY="193.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fc7f6f" height="4.0" layoutX="110.0" layoutY="193.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="80.0" layoutY="193.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="446.0" layoutY="216.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="446.0" layoutY="252.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="446.0" layoutY="293.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="446.0" layoutY="327.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="446.0" layoutY="363.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="446.0" layoutY="398.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="133.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fc7f6f" height="4.0" layoutX="103.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="73.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="229.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fc7f6f" height="4.0" layoutX="199.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="169.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fc7f6f" height="4.0" layoutX="293.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="263.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="352.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fc7f6f" height="4.0" layoutX="322.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fc7f6f" height="4.0" layoutX="416.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8678" height="4.0" layoutX="386.0" layoutY="442.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="18.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="53.0" layoutY="216.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="53.0" layoutY="252.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="53.0" layoutY="293.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="53.0" layoutY="327.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="53.0" layoutY="363.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff85a6" height="18.0" layoutX="53.0" layoutY="398.0" opacity="0.88" stroke="#fc7f6f" strokeType="INSIDE" width="4.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#87d7ff" height="110.0" layoutX="42.0" layoutY="503.0" opacity="0.72" stroke="#87d9ff" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="20.0" width="424.0" />
+        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="430.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/pixil-frame-0.png" />
+            </image>
+            <effect>
+                <ColorAdjust contrast="-0.1" />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="47.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/pixil-frame-0.png" />
+            </image>
+            <effect>
+                <ColorAdjust contrast="-0.11" />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="430.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/pixil-frame-0.png" />
+            </image>
+            <effect>
+                <ColorAdjust contrast="-0.1" />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="47.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/pixil-frame-0.png" />
+            </image>
+            <effect>
+                <ColorAdjust contrast="-0.11" />
+            </effect>
+        </ImageView>
+        <Circle fill="#ff85a6" layoutX="264.0" layoutY="561.0" opacity="0.55" radius="75.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+            <effect>
+                <BoxBlur width="115.96" />
+            </effect></Circle>
+        <Text fill="#b588ee" layoutX="39.0" layoutY="510.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" text="Here are the eligible Bachelors&amp;Bachlorettes!" wrappingWidth="464.00000000000006">
+            <font>
+                <Font name="Bauhaus 93" size="21.0" />
+            </font>
+            <stroke>
+                <RadialGradient centerX="0.4666666666666667" centerY="0.49523809523809526" radius="0.7382090582429935">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.3499999940395355" green="0.060277778655290604" blue="0.1423657387495041" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </stroke>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+        </Text>
+        <ImageView fitHeight="96.0" fitWidth="93.0" layoutX="29.0" layoutY="538.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Abigail-Portrait_192px.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <ColorAdjust brightness="-0.19" contrast="-0.9" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="abigailPrompt" fitHeight="103.0" fitWidth="102.0" layoutX="38.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Abigail-Portrait_192px.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="131.0" layoutY="549.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Elliott-Portrait_192px.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <ColorAdjust brightness="-0.2" contrast="-1.0" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="elliotPrompt" fitHeight="97.0" fitWidth="93.0" layoutX="141.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Elliott-Portrait_192px.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <ImageView fitHeight="93.0" fitWidth="85.0" layoutX="252.0" layoutY="550.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Sebastian-Portrait_192px.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <ColorAdjust brightness="-0.24" contrast="-1.0" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="sebastianPrompt" fitHeight="111.0" fitWidth="96.0" layoutX="257.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Sebastian-Portrait_192px.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="365.0" layoutY="549.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Maru-Portrait_192px.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <ColorAdjust brightness="-0.38" contrast="-0.99" hue="-1.0" saturation="-1.0" />
+            </effect>
+        </ImageView>
+        <ImageView fx:id="maruPrompt" fitHeight="97.0" fitWidth="93.0" layoutX="372.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assets/Maru-Portrait_192px.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#685dca" height="71.0" layoutX="169.0" layoutY="650.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="8.0" width="170.0">
+            <stroke>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.5412719249725342" green="0.7991403341293335" blue="0.9710526466369629" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.007633587786259542">
+                            <color>
+                                <Color red="0.5412719249725342" green="0.7991403341293335" blue="0.9710526466369629" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="0.635185182094574" blue="0.635185182094574" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke>
+        </Rectangle>
+        <Button fx:id="calculateCompatibility" layoutX="167.0" layoutY="650.0" mnemonicParsing="false" onAction="#calculateAction" opacity="0.92" prefHeight="70.0" prefWidth="174.0" style="-fx-background-color: #B588EE;" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Calibri Bold" size="20.0" />
+            </font>
+        </Button>
+      <Text disable="true" fill="WHITE" layoutX="193.0" layoutY="677.0" stroke="#371392" strokeType="OUTSIDE" strokeWidth="2.0" text="    Calculate Compatibility" wrappingWidth="204.0">
+         <font>
+            <Font name="Calibri" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </Text>
+      <Label fx:id="finalLabel" layoutX="21.0" layoutY="719.0" prefHeight="94.0" prefWidth="464.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
